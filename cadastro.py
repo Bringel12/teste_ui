@@ -53,13 +53,13 @@ def Editar_cliente():
     if linha != -1:  # Verifica se uma linha foi realmente selecionada
         # Pega os dados da linha selecionada
         dados_cliente = []
-        for col in range(3):  # Assumindo que temos 3 colunas de dados (cliente, email, endereco)
+        for col in range(4):  # Assumindo que temos 3 colunas de dados (cliente, email, endereco)
             dados_cliente.append(listarcliente.tableWidget.item(linha, col).text())
         
         # Preenche os campos de edição com os dados
-        Editarcliente.lineEdit.setText(dados_cliente[0])  # Cliente
-        Editarcliente.lineEdit_2.setText(dados_cliente[1])  # Email
-        Editarcliente.lineEdit_3.setText(dados_cliente[2])  # Endereço
+        Editarcliente.lineEdit.setText(dados_cliente[1])  # Cliente
+        Editarcliente.lineEdit_2.setText(dados_cliente[2])  # Email
+        Editarcliente.lineEdit_3.setText(dados_cliente[3])  # Endereço
 
         Editarcliente.show()  # Exibe a janela de edição
 
